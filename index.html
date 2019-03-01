@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ <script>
+function open_menu() {
+	document.getElementById("menu").style.display = "none";
+	document.getElementById("close").style.display = "block";
+
+   document.getElementById("myNavbar").style.display = "block";
+
+}
+function close_menu() {
+   document.getElementById("myNavbar").style.display = "none";
+    document.getElementById("close").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+}
+
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+$(document).ready(function () {
+    $("#Home").click(function () {
+        $("Home").toggleClass("hidden unhidden");
+    });
+}); 
+//------------------------
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+$(document).ready(function () {
+    $("#ContactMe").click(function () {
+        $("ContactMe").toggleClass("hidden unhidden");
+    });
+}); 
+//------------------------
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+$(document).ready(function () {
+    $("#About").click(function () {
+        $("About").toggleClass("hidden unhidden");
+    });
+}); 
+</script>
+   <style type="text/css">
+  
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    body{
+    	background-color:#000;   
+		color:#f3f3f3S;
+    }
+/* Styles */
+  html,body {
+  height:100%;
+  margin:0;
+}
+
+.fullscrht {
+  height:100%;
+  min-height:100%;/*for mozilla*/
+}
+
+#About{
+  background-color: white;
+  color: black;
+}
+#ContactMe{
+  background-color: black;
+  border-top:2px solid #fff;
+}
+    #close{
+    	display: none;
+    }
+   .hdrtxt,
+    .glyphicon{
+      font-size: 20px;
+    }
+
+
+    /**/
+    body {
+  width: 100wh;
+  height: 100%;
+  height:100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+    /*----------animation-------------*/
+  
+.img-circle  {
+  width: 200px;
+  height: 200px;
+  position:relative;
+ -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+-webkit-animation-fill-mode: forwards;
+  animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px; }
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px; }
+}
+  /**/
+  .img-txt  { 
+    color: white;
+  padding-top: 2%;    
+font-size: 24px;
+  position:relative;
+ -webkit-animation: lrrmove 5s;  /* Safari 4.0 - 8.0 */
+-webkit-animation-fill-mode: forwards;
+  animation: lrmove 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+@keyframes lrmove {
+  0%, 25% { left: 0%; opacity: 0; }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes lrmove {
+   0%, 25% { left: 0%; opacity: 0; }
+}
+ /**------------------------------------*/
+  /*---------------*/
+
+/* contact form */
+input[type=text], input[type=email]{
+    width: 90%;
+    padding: 1%; 
+   font-size: 20px;
+   color: white;
+     background-color:black;
+   border:none;
+   border-bottom:2px solid gray;
+}
+#textarea{  
+    width: 90%;
+    padding: 1%;
+    height: 150px;
+   font-family: sans-serif;
+   font-size: 20px;
+   color: white;
+     background-color:black;
+   border:none;
+   border-bottom:2px solid gray;
+}
+ 
+.footerout{background-color:black;padding:1% 30% 1% 30%;color: white;margin-top:1%;font-size: 24px;}
+.footerin{background-color:black;border:2px solid black;padding-left: 2%;padding-top:10px; }
+
+
+@media screen and (max-width: 500px) {
+  .img-circle{
+    width: 150px;height: 150px;
+  }
+  .img-txt{
+    font-size: 18px;
+  }
+ 
+  input[type=text], input[type=email]{
+    
+     font-size: 16px;
+}
+#textarea{
+    margin: 1%;  
+     font-size: 16px;
+}
+
+.footerout{background-color:black;padding:1% 1% 1% 1%;color:white;font-size: 18px;  }
+.footerin{background-color:#000;border:2px solid black;padding-left:2%;color:white;padding-top:10px;    }
+.contact_form{
+  height: 450px;
+  width: 100%;
+
+}
+}
+     
+   </style>
+  </head>
+  <body>
+<div id="Home" class="fullscrht">
+  	<nav class="navbar navbar-fixed-top navbar-inverse">
+  	<div class="container-fluid">
+  			<div class="navbar-header">
+  			 	<button type="button" class="navbar-toggle" id="menu" data-toggle="collapse" data-target="#myNavbar" onclick="open_menu();">
+  			 		 <span class="glyphicon">&#xe236;</span>
+  			    </button>
+      			 <button type="button" class="navbar-toggle" id="close" data-toggle="collapse" data-target="#" onclick="close_menu();">
+					<span class="glyphicon">&#xe014;</span>
+      			 </button>
+    			<a class="navbar-brand hdrtxt" href="#Home" >Minhaz Shaikh</a>
+    		</div>
+   			<div class="collapse navbar-collapse hdrtxt" id="myNavbar">
+     			<ul class="nav navbar-nav navbar-right">
+       			 <li><a href="#About">About</a></li>
+        		 <li class="dropdown""><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
+                <ul class="dropdown-menu">
+                  <li><a href="TheFix.html">The Fix</a></li>
+                  <li><a href="shop.html">MS Store</a></li>
+                </ul>
+             </li>
+       			 <li><a href="#ContactMe" >Contact Me</a></li>
+      			</ul>
+   			</div>
+   	</div>	
+	  </nav>
+
+	   <div class="container text-center">  
+      <div style="height:400px">
+		    <img src="minaz.jpg" class="img-circle"/>
+      </div>
+        <div class=" img-txt">
+			<p> Hello...! My name is Minhaz Shaikh.</p>
+      <p>
+			  I design simple and beautiful website and I love to do it.</p>
+        <p>I would like to show you my work <i style='font-size:24px;color: Yellow' class='fas'>&#xf118;</i></p>
+        <p><a class="btn btn-info btn-lg" href="#About">View my Work <span class="glyphicon">&#xe092;</span></a></p>
+	      </div>
+	   </div>
+    </div>
+</div>    
+<!-------------------ABOUT---------------------->
+<div id="About" class="container-fluid hdrtxt" style="background-color: white;padding:1% 5% 1% 5%;">
+      <h1 class="text-center"><strong>About Me </h1></strong></h1>
+      
+      <h3 class="margin">Minhaz Shaikh</h3>
+      <p> Friends, My name is Minhaz Shaikh and I live in Maryland, USA.</p>
+      <p> I'm a B.E. Computer Science & Enigneer</p>
+      <p> Currently I am doing Front-End Development. </p>
+        <p>I am proficient in various web development languages like Html5, CSS3, JavaScript, jQuries
+      as well as .Net technologies and SQL Server.</p>
+      <p>Here is my work example...</p> 
+      <br>
+      <div class="row">
+          <div class="col-sm-6 ">
+             <img src="mstore.jpeg" class="img-responsive margin" alt="Image" width="80%">
+             <br>
+             <p> This WebDemo is based on Mobile Repair Shop.</p>
+             <p>I have created it using Html5, W3.CSS and JavaScript.</p>
+             <p><a href="TheFix.html" class="btn btn-lg btn-info">View Link</a></p>
+          </div>
+          <div class="col-sm-6">
+            <img src="mstore.jpeg" class="img-responsive margin" style="" alt="Image" width="80%">
+            <br>
+             <p> This WebDemo is based on Online Store.</p>
+             <p>I have created it using Html5, CSS3 and JavaScript.</p>
+              <p><a href="#Home" class="btn btn-info btn-lg ">View Link</a></p>
+          </div>
+      </div>
+                
+</div>
+<!-------------- CONTCAT ME --------------------->
+
+<div id="ContactMe">
+      <div class="footerout" >
+         <h1 class="text-center"><strong>Contact Me </h1></strong></h1>
+  <div class="footerin">
+    <p style="font-family: Times New Roman">Have a question? Contact me here</p> 
+  <br/>
+    <div class="contact_form">
+  <p><input type="text" name="name" placeholder="Enter Your Name"/></p>
+  
+  <p><input type="email" name="email " placeholder="Enter  Email ID"/></p>
+  
+  <p><textarea name="textarea" " id="textarea" name="message" placeholder="Enter Your Message Here"></textarea></p>
+  
+  <p><input type="submit" name="Submit" value="Submit" class="btn btn-success btn-lg " /></p>
+    </div>
+  </div>
+  <div class="text-center">
+  <p><a href="#Home" class="btn btn-danger btn-lg "><i class="fa">&#xf102;</i></a></p>
+  <p>Minhaz Shaikh <span>&copy; </span> 2019.
+  </p>
+</div>
+</div>
+</div>
+
+  </body>
+</html>
